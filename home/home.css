@@ -1,0 +1,36 @@
+body {
+  background-color: #565454;
+}
+.header {
+  position: fixed;
+  background-color: white;
+  border-radius: 80px;
+  font-size: 25px;
+  display: flex; /* place links on one row */
+  justify-content: center; /* center them horizontally */
+  align-items: center;
+  gap: 16px; /* space between links */
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* style links inside the header */
+.header a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* optional hover effect */
+.header a:hover {
+  background: rgba(84, 71, 71, 0.08);
+}
+
+#top {
+  display: flex;
+  justify-content: center;
+}
