@@ -236,8 +236,11 @@ header {
   height: 140px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  overflow: hidden; /* This is important! It rounds the image's corners */
+  overflow: hidden;
   background-color: #e0e0e0; /* Gray fallback color while image loads */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .video-thumbnail img {
   width: 100%;
