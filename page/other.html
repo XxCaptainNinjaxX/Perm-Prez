@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prez & Prem - Other Videos</title>
     <link rel="stylesheet" href="page.css" />
+    <script defer src="../page/page.js"></script>
 
     <!-- Fonts -->
 
@@ -43,7 +44,7 @@
   <body>
     <header>
       <div class="header-left">
-        <a href="../main/home.html" class="logo">
+        <a href="../home.html" class="logo">
           <div class="logo-circle">
             <img src="../pics/prez&permpfp-modified.png" id="icon" />
           </div>
@@ -54,7 +55,7 @@
         <nav class="nav-main">
           <ul>
             <li><a href="../main/about.html">About us</a></li>
-            <li><a href="../main/home.html">Videos</a></li>
+            <li><a href="../home.html">Videos</a></li>
             <li><a href="../main/donations.html">Donations</a></li>
             <br /><br />
           </ul>
@@ -171,16 +172,5 @@
     </div>
 
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let toggleButton = document.getElementById("sidebarToggle");
-        let sidebar = document.getElementById("sidebar");
-
-        toggleButton.addEventListener("click", function () {
-          sidebar.classList.toggle("closed");
-        });
-      });
-    </script>
   </body>
 </html>

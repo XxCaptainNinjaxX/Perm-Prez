@@ -185,117 +185,43 @@ header {
   background-color: #f0f0f0;
 }
 
-/* Container fills the rest of the height */
-.page-body {
-  display: flex;
-  flex-grow: 1;
-  overflow: hidden; /* Prevents this from scrolling */
+/* Video Grid - Same as before, just moved to center */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 1.5rem; /* Space between the boxes */
 }
 
-/* ---            MAIN CONTENT               --- */
+.grid-item {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 3rem 1.5rem; /* Tall padding to look like your boxes */
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Mimics 3D look */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Lifts the box on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
 
 .main-content {
   flex-grow: 1;
   padding: 1rem 2rem;
   max-width: 1400px;
+  /* main css that makes content centered */
   margin: 0 auto;
-
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-content h1 {
   font-size: 2rem;
   margin-top: 0;
   text-align: center;
-}
-.main-content h1 span {
-  font-size: 0.9rem;
-  color: #777;
-  font-weight: normal;
-}
-
-.main-content h2 {
-  font-size: 1.5rem;
-  border-bottom: 2px solid #333; /* adds the "underline" under NBA */
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-/* centers all text */
-.main-content p,
-.main-content h3,
-.social-links {
-  text-align: center;
-}
-
-/* ---            NEW STYLES FOR ABOUT PAGE           --- */
-
-.about-description {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 3rem;
-  max-width: 900px; /* Makes text easier to read */
-  margin: 0 auto 3rem;
-}
-
-.team-section {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-bottom: none; /* No bottom border */
-  /* This creates the curved top */
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  padding: 3rem;
-  margin-top: 2rem;
-  flex-grow: 1;
-}
-
-/* Override the default bordered H2 */
-.team-section h2 {
-  font-size: 1.8rem;
-  text-align: center;
-  border-bottom: none; /* Remove the underline */
-  padding-bottom: 0;
-  margin-bottom: 0.5rem;
-}
-
-.team-section > p {
-  /* Target the subtitle */
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 3rem;
-  color: #666;
-  font-size: 1.1rem;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-}
-
-.team-member h3 {
-  font-size: 1.2rem;
-  color: #e67e22; /* Use the same orange as sidebar */
-  border-bottom: 2px solid #f0f0f0;
-  padding-bottom: 0.5rem;
-}
-
-.team-member .name {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.team-member .social-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.team-member .social-links li {
-  color: #1a73e8;
-  margin-bottom: 0.5rem;
+  padding-top: 1rem; /* Added padding to match <br> */
 }
