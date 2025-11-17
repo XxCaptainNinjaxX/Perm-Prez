@@ -97,11 +97,11 @@ header {
   border-radius: 10px;
   text-decoration-line: underline;
 }
-.nav-secondary .listen-live {
+#listen-live {
   color: #333;
   background-color: #f7d142;
   border-radius: 5px;
-  padding: 0.25rem 0.75rem;
+  padding: 2px;
   font-weight: bold;
 }
 
