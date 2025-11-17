@@ -10,6 +10,7 @@ html {
   background-color: #f4f4f4;
   color: #333;
   font-family: Comfortaa;
+  overflow: hidden;
 }
 /*              Header           */
 header {
@@ -37,6 +38,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#icon {
+  width: 60px;
+  height: 60px;
 }
 
 /* UPDATED: Header-center is now absolutely centered */
@@ -70,9 +75,27 @@ header {
   font-weight: bold;
   margin-bottom: 2px;
 }
+.nav-main a:hover {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+/*              bottom header              */
+
 .nav-secondary a {
   font-size: 0.9rem;
   color: #1a73e8;
+  padding: 5px;
+}
+#apple:hover {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-decoration-line: underline;
+}
+#spotify:hover {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-decoration-line: underline;
 }
 .nav-secondary .listen-live {
   color: #333;
@@ -94,6 +117,8 @@ header {
 .page-body {
   display: flex;
 }
+
+/*               Side Bar               */
 
 .sidebar-toggle-container {
   flex-shrink: 0;
@@ -206,16 +231,18 @@ header {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
+
 .video-thumbnail {
   height: 140px;
-  background-color: #e0e0e0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-  color: #888;
+  overflow: hidden; /* This is important! It rounds the image's corners */
+  background-color: #e0e0e0; /* Gray fallback color while image loads */
+}
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes the image fill the box without stretching */
 }
 .video-info {
   padding: 0.75rem;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prez & Prem - NBA Videos</title>
+    <title>Prez & Prem - Basketball Videos</title>
     <link rel="stylesheet" href="basketball.css" />
 
     <!-- Fonts -->
@@ -16,14 +16,37 @@
     />
 
     <!-- end Fonts -->
+
+    <!-- start favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../pics/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../pics/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../pics/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../pics/site.webmanifest" />
+    <!-- end favicon -->
   </head>
   <!-- Nav bar -->
 
   <body>
     <header>
       <div class="header-left">
-        <a href="#" class="logo">
-          <div class="logo-circle"></div>
+        <a href="../home/home.html" class="logo">
+          <div class="logo-circle">
+            <img src="../pics/prez&permpfp-modified.png" id="icon" />
+          </div>
         </a>
       </div>
 
@@ -38,9 +61,9 @@
         </nav>
         <nav class="nav-secondary">
           <ul>
-            <li><a href="#">Apple Music</a></li>
+            <li id="apple"><a href="#">Apple Music</a></li>
             <li><a href="#" class="listen-live">Listen Live! </a></li>
-            <li><a href="#">Spotify</a></li>
+            <li id="spotify"><a href="#">Spotify</a></li>
           </ul>
         </nav>
       </div>
@@ -64,12 +87,11 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#">NBA</a></li>
-            <li><a href="#">Politics</a></li>
-            <li><a href="#">NFL</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="#">Travel Vlogs</a></li>
-            <li><a href="#">Gaming</a></li>
+            <li><a href="">🏀NBA</a></li>
+            <li><a href="#">🏈NFL</a></li>
+            <li><a href="#">📝Politics</a></li>
+            <li><a href="#">🎵Music</a></li>
+            <li><a href="#">🗣️Interviews</a></li>
             <li><a href="#">Other</a></li>
           </ul>
         </nav>
@@ -84,16 +106,30 @@
       <main class="main-content">
         <br />
         <h1>Prez & Prem Videos</h1>
-        <h2>NBA Videos</h2>
+        <h2>Basketball Videos</h2>
 
         <div class="video-grid">
-          <a href="#" class="video-card">
-            <div class="video-thumbnail">(Video Thumbnail)</div>
+          <!-- start copy for every episode -->
+          <a
+            href="https://www.youtube.com/watch?v=kfHCrlVwF_A"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="video-card"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="https://i.ytimg.com/vi/kfHCrlVwF_A/hqdefault.jpg"
+                alt="Episode 1"
+              />
+            </div>
+
             <div class="video-info">
-              <span class="video-tag">BLB</span>
-              <span class="video-views">578 views</span>
+              <span class="video-tag">Episode 1</span>
+              <span class="video-views">57:11</span>
             </div>
           </a>
+          <!-- END copy for every episode -->
+
           <a href="#" class="video-card">
             <div class="video-thumbnail">(Video Thumbnail)</div>
             <div class="video-info">
