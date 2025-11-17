@@ -225,3 +225,7 @@ header {
   text-align: center;
   padding-top: 1rem; /* Added padding to match <br> */
 }
+
+.video-grid .grid-item:nth-child(7) {
+  grid-column-start: 2;
+}
