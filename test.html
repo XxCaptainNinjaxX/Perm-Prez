@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Landing Page</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", Arial, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e293b, #3b82f6);
+        background-size: 400% 400%;
+        animation: gradientFlow 12s ease infinite;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        padding: 40px 0;
+      }
+      @keyframes gradientFlow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      header {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1.3rem;
+        opacity: 0.85;
+        margin-bottom: 50px;
+      }
+      .button-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 90%;
+        max-width: 1000px;
+      }
+      .btn {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 18px;
+        text-align: center;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        transition: 0.25s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      }
+      .btn:hover {
+        background: rgba(255, 255, 255, 0.22);
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Website</h1>
+      <p>Select an option to continue</p>
+    </header>
+    <div class="button-grid">
+      <div class="btn">Button 1</div>
+      <div class="btn">Button 2</div>
+      <div class="btn">Button 3</div>
+      <div class="btn">Button 4</div>
+      <div class="btn">Button 5</div>
+      <div class="btn">Button 6</div>
+      <div class="btn">Button 7</div>
+      <div class="btn">Button 8</div>
+      <div class="btn">Button 9</div>
+    </div>
+  </body>
+</html>

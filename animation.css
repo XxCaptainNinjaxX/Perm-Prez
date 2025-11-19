@@ -1,0 +1,24 @@
+body,
+html {
+  /* Sky Blue -> Baby Blue -> White */
+  background: linear-gradient(135deg, #e0f7fa, #b3e5fc, #e1f5fe, #ffffff);
+  background-size: 400% 400%;
+
+  animation: gradientFlow 8s ease infinite;
+
+  font-family: Comfortaa;
+  overflow: hidden;
+  height: 100vh;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
