@@ -1,7 +1,6 @@
 body,
 html {
-  /* Sky Blue -> Baby Blue -> White */
-  background: linear-gradient(135deg, #e0f7fa, #b3e5fc, #e1f5fe, #ffffff);
+  background: linear-gradient(135deg, #222831, #30271b, #634c2b);
   background-size: 400% 400%;
 
   animation: gradientFlow 8s ease infinite;

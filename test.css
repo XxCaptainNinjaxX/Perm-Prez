@@ -1,0 +1,23 @@
+[data-theme="test"] {
+  --color-button: #7292eb;
+  --color-text: #7cdfec;
+  --color-background-1: #3b4252;
+  --color-background-2: #434c5e;
+  --color-background-3: #4c566a;
+
+  --color-background-3: #e0f7fa;
+  --color-background-3: #b3e5fc;
+  --color-background-3: #e1f5fe;
+  --color-background-3: #ffffff;
+
+  --color-background-3: #222831;
+  --color-background-3: #2a2d31;
+  --color-background-3: #948979;
+  --color-background-3: #dfd0b8;
+
+  --color-background-3: #241a0b;
+
+  --color-background-3: #61533e;
+  --color-background-3: #968771;
+  --color-background-3: #766141;
+}
