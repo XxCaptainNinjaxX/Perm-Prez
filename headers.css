@@ -6,17 +6,14 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
   font-family: Comfortaa;
   overflow: hidden;
 }
+
 /*              Header           */
 header {
-  background-color: #ffffff;
   padding: 0 2rem;
-  border-bottom: 1px solid #ccc;
+
   display: flex;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -24,17 +21,16 @@ header {
   top: 0;
   z-index: 1000;
   height: 80px;
-  /* position: relative; */
+  letter-spacing: 1px;
+  font-weight: bold;
+  /* hr  */
+  /* border-bottom: 1px solid #ccc; */
 }
 
 .header-left .logo-circle {
-  background-color: #555;
-  color: white;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  font-size: 1.2rem;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +40,6 @@ header {
   height: 60px;
 }
 
-/* UPDATED: Header-center is now absolutely centered */
 .header-center {
   display: flex;
   flex-direction: column;
@@ -67,7 +62,7 @@ header {
 }
 .header-center nav a {
   text-decoration: none;
-  color: #555;
+  color: #dfd0b8;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
 }
@@ -76,30 +71,33 @@ header {
   margin-bottom: 2px;
 }
 .nav-main a:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(150, 135, 113, 0.7);
   border-radius: 10px;
+  box-shadow: 0 0 15px rgba(150, 135, 113, 0.6), 0 0 5px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
 /*              bottom header              */
 
-.nav-secondary a {
-  font-size: 0.9rem;
-  color: #1a73e8;
-  padding: 5px;
-}
 #apple:hover {
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  text-decoration-line: underline;
+  background-color: #fc3c44;
+  border-radius: 15px;
+  color: #c2cad7;
+  text-decoration: underline;
 }
+
 #spotify:hover {
-  background-color: #f0f0f0;
+  background-color: #191414;
   border-radius: 10px;
   text-decoration-line: underline;
+  color: #1ed760;
 }
+
+/* changes the text of Listen Live  */
 #listen-live {
-  color: #333;
-  background-color: #f7d142;
+  color: #000000;
+  background-color: #a38a2ece;
   border-radius: 5px;
   padding: 2px;
   font-weight: bold;
@@ -122,11 +120,14 @@ header {
 
 .sidebar-toggle-container {
   flex-shrink: 0;
-  background-color: #ffffff;
   padding: 1rem 0.5rem;
   position: sticky;
   top: 80px;
   height: calc(100vh - 80px);
+}
+
+#sidebarToggle {
+  color: #dfd0b8;
 }
 
 .hamburger-icon {
@@ -138,8 +139,6 @@ header {
 .sidebar {
   width: 220px;
   padding: 1rem;
-  background-color: #ffffff;
-  border-right: 1px solid #ddd;
   flex-shrink: 0;
   transition: margin-left 0.3s ease-in-out;
   position: sticky;
@@ -159,8 +158,8 @@ header {
 .sidebar-header h2 {
   font-size: 1.1rem;
   margin: 0;
-  color: #e67e22;
-  border-bottom: 2px solid #333;
+  color: #dfd0b8;
+  border-bottom: 2px solid #dfd0b8;
   padding-bottom: 0.5rem;
 }
 
@@ -177,17 +176,36 @@ header {
   display: block;
   padding: 0.75rem 0.5rem;
   text-decoration: none;
-  color: #444;
-  border-radius: 5px;
+  color: rgb(222, 137, 0);
+  border-radius: 15px;
   text-align: center;
 }
 .sidebar nav li a:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(150, 135, 113);
+
+  /* Adds a slight shift to make it feel interactive */
+  transform: translateX(5px);
+  transition: transform 0.2s ease;
+
+  box-shadow: 0 0 10px rgba(150, 135, 113, 0.5), 0 0 3px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Container fills the rest of the height */
-.page-body {
-  display: flex;
+/*                     Headers                                          */
+
+.main-content {
   flex-grow: 1;
-  overflow: hidden; /* Prevents this from scrolling */
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  /* main css that makes content centered */
+  margin: 0 auto;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 1rem;
+  color: #dfd0b8;
 }
