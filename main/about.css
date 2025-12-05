@@ -7,14 +7,12 @@ html {
   margin: 0;
   padding: 0;
   font-family: Comfortaa;
-  overflow: hidden;
 }
 
 /*              Header           */
 header {
-  background: rgba(255, 255, 255, 0.6); /* 60% opacity white */
   padding: 0 2rem;
-  border-bottom: 1px solid #ccc;
+
   display: flex;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -24,7 +22,8 @@ header {
   height: 80px;
   letter-spacing: 1px;
   font-weight: bold;
-  /* position: relative; */
+  /* hr  */
+  /* border-bottom: 1px solid #ccc; */
 }
 
 .header-left .logo-circle {
@@ -62,7 +61,7 @@ header {
 }
 .header-center nav a {
   text-decoration: none;
-  color: #555;
+  color: #dfd0b8;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
 }
@@ -71,22 +70,15 @@ header {
   margin-bottom: 2px;
 }
 .nav-main a:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(150, 135, 113, 0.7);
   border-radius: 10px;
-
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 5px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0 0 15px rgba(150, 135, 113, 0.6), 0 0 5px rgba(0, 0, 0, 0.1);
   color: #000;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
 /*              bottom header              */
 
-.nav-secondary a {
-  font-size: 0.9rem;
-  color: #1a73e8;
-  padding: 5px;
-}
 #apple:hover {
   background-color: #fc3c44;
   color: #020101;
@@ -99,21 +91,22 @@ header {
   text-decoration-line: underline;
 }
 
-/* changes the text */
+/* changes the text of apple music*/
 #apple:hover a {
   color: #c2cad7;
   text-decoration: underline;
 }
 
-/* changes the text */
+/* changes the text of spotify */
 #spotify:hover a {
   color: #1ed760;
   text-decoration: underline;
 }
 
+/* changes the text of Listen Live  */
 #listen-live {
-  color: #333;
-  background-color: #f7d142;
+  color: #000000;
+  background-color: #a38a2ece;
   border-radius: 5px;
   padding: 2px;
   font-weight: bold;
@@ -136,11 +129,14 @@ header {
 
 .sidebar-toggle-container {
   flex-shrink: 0;
-  background: rgba(255, 255, 255, 0.6);
   padding: 1rem 0.5rem;
   position: sticky;
   top: 80px;
   height: calc(100vh - 80px);
+}
+
+#sidebarToggle {
+  color: #dfd0b8;
 }
 
 .hamburger-icon {
@@ -152,8 +148,6 @@ header {
 .sidebar {
   width: 220px;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.6);
-  border-right: 1px solid #ddd;
   flex-shrink: 0;
   transition: margin-left 0.3s ease-in-out;
   position: sticky;
@@ -173,8 +167,8 @@ header {
 .sidebar-header h2 {
   font-size: 1.1rem;
   margin: 0;
-  color: #e67e22;
-  border-bottom: 2px solid #333;
+  color: #dfd0b8;
+  border-bottom: 2px solid #dfd0b8;
   padding-bottom: 0.5rem;
 }
 
@@ -191,40 +185,42 @@ header {
   display: block;
   padding: 0.75rem 0.5rem;
   text-decoration: none;
-  color: #444;
+  color: rgb(222, 137, 0);
   border-radius: 15px;
   text-align: center;
 }
 .sidebar nav li a:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(150, 135, 113);
 
   /* Adds a slight shift to make it feel interactive */
   transform: translateX(5px);
   transition: transform 0.2s ease;
 
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(150, 135, 113, 0.5), 0 0 3px rgba(0, 0, 0, 0.1);
   color: #000;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
-/* ---                                MAIN CONTENT                                 --- */
+/*                     Headers                                          */
 
 .main-content {
   flex-grow: 1;
   padding: 1rem 2rem;
   max-width: 1400px;
+  /* main css that makes content centered */
   margin: 0 auto;
-
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-content h1 {
   font-size: 2rem;
   margin-top: 0;
   text-align: center;
+  padding-top: 1rem;
+  color: #dfd0b8;
 }
+
+/* ---            MAIN CONTENT               --- */
+
 .main-content h1 span {
   font-size: 0.9rem;
   color: #777;
@@ -232,11 +228,9 @@ header {
 }
 
 .main-content h2 {
-  font-size: 1.5rem;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+  color: #e67e22;
 }
+
 /* centers all text */
 .main-content p,
 .main-content h3,
@@ -251,21 +245,22 @@ header {
 
 .about-description {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.4;
   margin-bottom: 3rem;
   max-width: 900px;
   margin: 0 auto 3rem;
+  color: #dfd0b8;
 }
 
 .team-section {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-bottom: none;
+  border: 2px solid #ccc;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   padding: 3rem;
   margin-top: 2rem;
   flex-grow: 1;
+
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
 }
 
 .team-section h2 {
@@ -281,7 +276,7 @@ header {
   text-align: center;
   margin-top: 0;
   margin-bottom: 3rem;
-  color: #666;
+  color: #dfd0b8;
   font-size: 1.1rem;
 }
 
@@ -295,10 +290,11 @@ header {
 }
 
 .team-member h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #e67e22;
   border-bottom: 2px solid #f0f0f0;
   padding-bottom: 0.5rem;
+  border-radius: 10px;
 }
 
 .team-member .name {
@@ -306,15 +302,31 @@ header {
   font-size: 1.1rem;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  color: #fefefe;
 }
-
+/* main team member area */
 .team-member .social-links {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  text-decoration: none;
+}
+.team-member .social-links:hover {
+  text-decoration: underline;
+}
+/* link */
+.team-member .social-links a {
+  text-decoration: none;
+  color: #1a73e8;
 }
 
+/* secondary line */
 .team-member .social-links li {
   color: #1a73e8;
   margin-bottom: 0.5rem;
+}
+
+.more_links h2 {
+  border-bottom: 40px;
 }

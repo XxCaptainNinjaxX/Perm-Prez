@@ -6,7 +6,6 @@ html {
   animation: gradientFlow 8s ease infinite;
 
   font-family: Comfortaa;
-  overflow: hidden;
   height: 100vh;
 }
 
