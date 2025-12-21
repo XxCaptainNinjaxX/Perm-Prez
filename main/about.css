@@ -91,7 +91,8 @@
 
   text-decoration: none;
 }
-.team-member .social-links:hover {
+.team-member #social1:hover,
+.team-member #social2:hover {
   text-decoration: underline;
 }
 /* link */
