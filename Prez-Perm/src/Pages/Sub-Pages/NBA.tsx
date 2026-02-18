@@ -1,4 +1,6 @@
 import Card from "../../Components/Card/Card";
+import Title from "../../Components/Title/Title";
+
 import "./Subpage.css";
 
 const NBAList = [
@@ -25,8 +27,7 @@ const NBAList = [
 export default function NBA() {
   return (
     <div className="category-container">
-      <h1 className="main-title">Prez & Prem Videos</h1>
-      <h2 className="section-title">NBA Videos</h2>
+      <Title name="NBA" />
 
       <div className="video-grid">
         {NBAList.map((vid, index) => (
