@@ -10,22 +10,22 @@ export default function Home() {
         <NavLink to="/NBA" className="grid-item">
           NBA
         </NavLink>
-        <NavLink to="NFL.html" className="grid-item">
+        <NavLink to="/NFL" className="grid-item">
           NFL
         </NavLink>
-        <NavLink to="politics.html" className="grid-item">
+        <NavLink to="/politics" className="grid-item">
           Politics
         </NavLink>
-        <NavLink to="music.html" className="grid-item">
+        <NavLink to="/music" className="grid-item">
           Music
         </NavLink>
-        <NavLink to="interviews.html" className="grid-item">
+        <NavLink to="/interviews" className="grid-item">
           Interviews
         </NavLink>
-        <NavLink to="other.html" className="grid-item">
+        <NavLink to="/other" className="grid-item">
           Other
         </NavLink>
-        <NavLink to="all.html" className="grid-item">
+        <NavLink to="/all" className="grid-item">
           ALL
         </NavLink>
       </div>
