@@ -8,7 +8,7 @@ import Home from "./Pages/Main-Pages/Home/Home";
 import About from "./Pages/Main-Pages/About/About";
 import Donation from "./Pages/Main-Pages/Donation/Donation";
 
-import NBA from "./Pages/Sub-Pages/NBA/NBA";
+import NBA from "./Pages/Sub-Pages/NBA";
 import ALL from "./Pages/Sub-Pages/ALL/ALL";
 import Interviews from "./Pages/Sub-Pages/Interviews/Interviews";
 import Music from "./Pages/Sub-Pages/Music/Music";

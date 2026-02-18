@@ -1,0 +1,64 @@
+.video-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  overflow: hidden; /* Keeps the thumbnail inside the rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+  height: 150px;
+  background-color: #e0e0e0; /* Gray placeholder background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-info {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.video-tag {
+  background-color: #333;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8rem;
+
+  /* Truncates the tag text with "..." if the title is too long */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75%;
+}
+
+.video-views {
+  color: #666;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
