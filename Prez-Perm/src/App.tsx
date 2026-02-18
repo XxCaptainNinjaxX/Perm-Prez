@@ -8,6 +8,14 @@ import Home from "./Pages/Main-Pages/Home/Home";
 import About from "./Pages/Main-Pages/About/About";
 import Donation from "./Pages/Main-Pages/Donation/Donation";
 
+import NBA from "./Pages/Sub-Pages/NBA/NBA";
+import ALL from "./Pages/Sub-Pages/ALL/ALL";
+import Interviews from "./Pages/Sub-Pages/Interviews/Interviews";
+import Music from "./Pages/Sub-Pages/Music/Music";
+import NFL from "./Pages/Sub-Pages/NFL/NFL";
+import Other from "./Pages/Sub-Pages/Other/Other";
+import Politics from "./Pages/Sub-Pages/Politics/Politics";
+
 export default function App() {
   return (
     <>
@@ -21,6 +29,13 @@ export default function App() {
             <Route path="/About" element={<About />} />
             <Route path="/Home" element={<Home />} />
             <Route path="/Donations" element={<Donation />} />
+            <Route path="/NBA" element={<NBA />} />
+            <Route path="/NFL" element={<NFL />} />
+            <Route path="/ALL" element={<ALL />} />
+            <Route path="/Other" element={<Other />} />
+            <Route path="/Politics" element={<Politics />} />
+            <Route path="/Music" element={<Music />} />
+            <Route path="/Interviews" element={<Interviews />} />
           </Routes>
 
           <h1>test test</h1>

@@ -123,119 +123,17 @@ header {
   overflow: hidden;
 }
 
-/*               Side Bar               */
-
-.sidebar-toggle-container {
-  flex-shrink: 0;
-  padding: 1rem 0.5rem;
-  position: sticky;
-  top: 80px;
-  height: calc(100vh - 80px);
-}
-
-#sidebarToggle {
-  color: #dfd0b8;
-}
-
-.hamburger-icon {
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.sidebar {
-  width: 220px;
-  padding: 1rem;
-  flex-shrink: 0;
-  transition: margin-left 0.3s ease-in-out;
-  height: 100%;
-  overflow-y: auto;
-}
-
-.sidebar-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  white-space: nowrap;
-  overflow: hidden;
-  justify-content: center;
-}
-
-.sidebar-header h2 {
-  font-size: 1.1rem;
-  margin: 0;
-  color: #dfd0b8;
-  border-bottom: 2px solid #dfd0b8;
-  padding-bottom: 0.5rem;
-}
-
-.sidebar.closed {
-  margin-left: -221px;
-}
-
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.sidebar nav li a {
-  display: block;
-  padding: 0.75rem 0.5rem;
-  text-decoration: none;
-  color: rgb(222, 137, 0);
-  border-radius: 15px;
-  text-align: center;
-}
-.sidebar nav li a:hover {
-  background-color: rgba(150, 135, 113);
-
-  /* Adds a slight shift to make it feel interactive */
-  transform: translateX(5px);
-  transition: transform 0.2s ease;
-
-  box-shadow:
-    0 0 10px rgba(150, 135, 113, 0.5),
-    0 0 3px rgba(0, 0, 0, 0.1);
-  color: #000;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-}
-
-/*                     Headers                                          */
-
-.main-content {
-  flex-grow: 1;
-  padding: 1rem 2rem;
-  max-width: 1400px;
-  /* main css that makes content centered */
-  margin: 0 auto;
-  overflow-y: auto;
-  height: 100%;
-}
-
-.main-content h1 {
-  font-size: 2rem;
-  margin-top: 0;
-  text-align: center;
-  padding-top: 1rem;
-  color: #dfd0b8;
-}
-
 /* =========================================
    Mobile Responsiveness (Tablets & Phones)
    ========================================= */
 @media (max-width: 850px) {
   header {
     flex-direction: column;
-    height: auto; /* Lets the header grow to fit the stacked links */
+    height: auto;
     padding: 1rem;
   }
 
-  .header-left {
-    margin-bottom: 1rem; /* Adds space between the logo and the links */
-  }
-
   .header-center {
-    /* Turns off the absolute positioning so it stops floating */
     position: relative;
     left: auto;
     top: auto;
@@ -244,13 +142,13 @@ header {
   }
 
   .header-center nav ul {
-    flex-wrap: wrap; /* Allows links to wrap to a new line if they run out of room */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Uses gap instead of heavy margins for better mobile spacing */
+    gap: 10px;
   }
 
   .header-center nav li {
-    margin: 0 5px; /* Shrinks the side margins on mobile */
+    margin: 0 5px;
   }
 
   .nav-main {
