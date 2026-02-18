@@ -219,3 +219,41 @@ header {
   padding-top: 1rem;
   color: #dfd0b8;
 }
+
+/* =========================================
+   Mobile Responsiveness (Tablets & Phones)
+   ========================================= */
+@media (max-width: 850px) {
+  header {
+    flex-direction: column;
+    height: auto; /* Lets the header grow to fit the stacked links */
+    padding: 1rem;
+  }
+
+  .header-left {
+    margin-bottom: 1rem; /* Adds space between the logo and the links */
+  }
+
+  .header-center {
+    /* Turns off the absolute positioning so it stops floating */
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+  }
+
+  .header-center nav ul {
+    flex-wrap: wrap; /* Allows links to wrap to a new line if they run out of room */
+    justify-content: center;
+    gap: 10px; /* Uses gap instead of heavy margins for better mobile spacing */
+  }
+
+  .header-center nav li {
+    margin: 0 5px; /* Shrinks the side margins on mobile */
+  }
+
+  .nav-main {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,29 +1,46 @@
+import { NavLink, Link } from "react-router-dom";
 import "./Header.css";
+
+import logoImg from "../../assets/prez&permpfp-modified.png";
 
 export default function Header() {
   return (
     <header>
       <div className="header-left">
-        <a href="../index.html" className="logo">
+        <Link to="/Home" className="logo">
           <div className="logo-circle">
-            <img src="../pics/prez&permpfp-modified.png" id="icon" alt="logo" />
+            <img src={logoImg} id="icon" alt="logo" />
           </div>
-        </a>
+        </Link>
       </div>
 
       <div className="header-center">
         <nav className="nav-main">
           <ul>
             <li>
-              <a href="../main/about.html">About us</a>
+              <NavLink
+                to="/About"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                About us
+              </NavLink>
             </li>
             <li>
-              <a href="../index.html">Videos</a>
+              <NavLink
+                to="/Home"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Videos
+              </NavLink>
             </li>
             <li>
-              <a href="../main/donations.html">Donations</a>
+              <NavLink
+                to="/Donations"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Donations
+              </NavLink>
             </li>
-            {/* br *2 */}
           </ul>
         </nav>
         <nav className="nav-secondary">
@@ -31,25 +48,19 @@ export default function Header() {
             <li id="apple">
               <a href="#">Apple Music</a>
             </li>
-            <li id="listen-live">Listen Live!</li>
+            <li id="listen-live">&lt;- Listen Live! -&gt;</li>
             <li id="spotify">
               <a
                 href="https://open.spotify.com/show/2NsOwiGU8cagjO7C4noz8L?si=3459c631d39e4164"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Spotify{" "}
+                Spotify
               </a>
             </li>
           </ul>
         </nav>
       </div>
-
-      {/* <div className="header-right">
-        <div className="auth-links">
-          <a href="#">Sign in / login</a>
-        </div>
-      </div>  */}
     </header>
   );
 }
