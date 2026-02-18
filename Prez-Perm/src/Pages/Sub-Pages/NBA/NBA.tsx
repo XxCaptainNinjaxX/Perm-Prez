@@ -1,7 +1,9 @@
+import Title from "../../../Components/Title/Title";
+
 export default function NBA() {
   return (
     <>
-      <h1> NBA page </h1>
+      <Title name="NBA" />
     </>
   );
 }

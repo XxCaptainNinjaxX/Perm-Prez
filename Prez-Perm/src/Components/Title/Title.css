@@ -1,0 +1,13 @@
+.main-content h1 span {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: normal;
+}
+
+.main-content h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgb(222, 137, 0); /* adds the "underline" under NBA */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: rgb(222, 137, 0);
+}

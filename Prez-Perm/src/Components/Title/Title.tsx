@@ -1,9 +1,14 @@
-import "Title.css";
+import "./Title.css";
 
-export default function Title() {
+interface CardProp {
+  name: String;
+}
+
+export default function Card(props: CardProp) {
   return (
     <>
-      <h1> Title</h1>
+      <h1> Prez & Prem Videos</h1>
+      <h2> {props.name} Videos</h2>
     </>
   );
 }
