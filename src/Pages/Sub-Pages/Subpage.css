@@ -2,23 +2,6 @@
   width: 100%;
 }
 
-.main-title {
-  font-size: 2rem;
-  margin-top: 0;
-  text-align: center;
-  padding-top: 1rem;
-  color: #dfd0b8;
-}
-
-.section-title {
-  font-size: 1.5rem;
-  border-bottom: 2px solid rgb(222, 137, 0);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-  color: rgb(222, 137, 0);
-  text-align: left;
-}
-
 .video-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
