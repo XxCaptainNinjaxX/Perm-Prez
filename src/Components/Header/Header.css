@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Comfortaa;
+}
+
+/*              Header           */
+header {
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 80px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  /* hr  */
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.header-left,
+.logo-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#icon {
+  width: 60px;
+  height: 60px;
+}
+
+.header-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* These 4 lines center the nav */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-center nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.header-center nav li {
+  margin: 0 1rem;
+}
+.header-center nav a {
+  text-decoration: none;
+  color: #dfd0b8;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+.nav-main {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.nav-main a:hover {
+  background-color: rgba(150, 135, 113, 0.7);
+  border-radius: 10px;
+  box-shadow:
+    0 0 15px rgba(150, 135, 113, 0.6),
+    0 0 5px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/*              bottom header              */
+
+#apple:hover {
+  background-color: #fc3c44;
+  border-radius: 15px;
+  color: #c2cad7;
+  text-decoration: underline;
+}
+
+#spotify:hover {
+  background-color: #191414;
+  border-radius: 10px;
+  text-decoration-line: underline;
+  color: #1ed760;
+}
+#spotify:hover a {
+  color: #1ed760;
+  text-decoration: underline;
+}
+/* changes the text of Listen Live  */
+#listen-live {
+  color: #000000;
+  background-color: #a38a2ece;
+  border-radius: 5px;
+  padding: 2px;
+  font-weight: bold;
+}
+
+.header-right {
+  margin-left: auto;
+}
+.header-right .auth-links a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.page-body {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+/* =========================================
+   Mobile Responsiveness (Tablets & Phones)
+   ========================================= */
+@media (max-width: 850px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .header-center {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+  }
+
+  .header-center nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .header-center nav li {
+    margin: 0 5px;
+  }
+
+  .nav-main {
+    margin-bottom: 1rem;
+  }
+}
