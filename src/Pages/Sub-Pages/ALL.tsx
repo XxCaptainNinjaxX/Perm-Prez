@@ -2,6 +2,7 @@ import Card from "../../Components/Card/Card";
 import Title from "../../Components/Title/Title";
 
 import "./Subpage.css";
+const noVid = "https://www.youtube.com/@PrezPremPodcast";
 
 const ALLList = [
   {
@@ -17,12 +18,42 @@ const ALLList = [
     link: "https://www.youtube.com/watch?v=4Nhz4QswAV0",
   },
 
-  { duration: "....", title: "Episode 3", thumbnail: "", link: "#" },
-  { duration: "....", title: "Episode 4", thumbnail: "", link: "#" },
-  { duration: "....", title: "Episode 5", thumbnail: "", link: "#" },
-  { duration: "....", title: "Episode 6", thumbnail: "", link: "#" },
-  { duration: "....", title: "Episode 7", thumbnail: "", link: "#" },
-  { duration: "....", title: "Episode 8", thumbnail: "", link: "#" },
+  {
+    duration: "....",
+    title: "Episode 3",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "Episode 4",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "Episode 5",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "Episode 6",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "Episode 7",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "Episode 8",
+    thumbnail: "",
+    link: noVid,
+  },
 ];
 
 export default function ALL() {

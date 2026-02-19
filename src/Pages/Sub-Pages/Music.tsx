@@ -3,16 +3,18 @@ import Title from "../../Components/Title/Title";
 
 import "./Subpage.css";
 
-const MusicList = [
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
+const noVid = "https://www.youtube.com/@PrezPremPodcast";
 
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
+const MusicList = [
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
 ];
 
 export default function Music() {

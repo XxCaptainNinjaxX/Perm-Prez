@@ -2,6 +2,7 @@ import Card from "../../Components/Card/Card";
 import Title from "../../Components/Title/Title";
 
 import "./Subpage.css";
+const noVid = "https://www.youtube.com/@PrezPremPodcast";
 
 const NBAList = [
   {
@@ -16,12 +17,12 @@ const NBAList = [
     thumbnail: "https://i.ytimg.com/vi/4Nhz4QswAV0/hqdefault.jpg",
     link: "https://www.youtube.com/watch?v=4Nhz4QswAV0",
   },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
 ];
 
 export default function NBA() {

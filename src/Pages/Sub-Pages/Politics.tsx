@@ -2,17 +2,18 @@ import Card from "../../Components/Card/Card";
 import Title from "../../Components/Title/Title";
 
 import "./Subpage.css";
+const noVid = "https://www.youtube.com/@PrezPremPodcast";
 
 const PoliticsList = [
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
 
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
+  { duration: "....", title: "-----", thumbnail: "", link: noVid },
 ];
 
 export default function Politics() {

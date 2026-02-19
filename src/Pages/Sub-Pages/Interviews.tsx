@@ -3,16 +3,58 @@ import Title from "../../Components/Title/Title";
 
 import "./Subpage.css";
 
-const InterviewsList = [
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
+const noVid = "https://www.youtube.com/@PrezPremPodcast";
 
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
-  { duration: "....", title: "-----", thumbnail: "", link: "#" },
+const InterviewsList = [
+  {
+    duration: "....",
+    title: "-----",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "-----",
+    thumbnail: "",
+    link: noVid,
+  },
+
+  {
+    duration: "....",
+    title: "-----",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "-----",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "-----",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "-----",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "-----",
+    thumbnail: "",
+    link: noVid,
+  },
+  {
+    duration: "....",
+    title: "-----",
+    thumbnail: "",
+    link: noVid,
+  },
 ];
 
 export default function Interviews() {
